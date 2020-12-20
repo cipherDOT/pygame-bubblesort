@@ -1,9 +1,11 @@
 
+# -------------------------------------------------------imports------------------------------------------------------------ #
 import pygame
 from pygame.draw import rect, line
 from pygame.time import Clock
 from random import randint
 
+# ---------------------------------------------------global variables------------------------------------------------------- #
 width = 600
 height = 400
 rez = 10
@@ -14,6 +16,8 @@ display = pygame.display.set_mode((width, height))
 array = []
 for i in range(width // rez):
     array.append(randint(1, height // rez))
+
+# -----------------------------------------------------draw functions------------------------------------------------------- #
 
 
 def drawgrid():
@@ -35,9 +39,13 @@ def draw(n=None):
 
     drawgrid()
 
+# ---------------------------------------swapping function to swap to elements in a array---------------------------------- #
+
 
 def swap(array, i, j):
     array[i], array[j] = array[j], array[i]
+
+# -------------------------------------------------------the main loop------------------------------------------------------ #
 
 
 def main():
@@ -80,6 +88,10 @@ def main():
         draw(j)
         pygame.display.flip()
 
+# -------------------------------------------------calling the function---------------------------------------------------- #
+
 
 if __name__ == "__main__":
     main()
+
+# ------------------------------------------------------------------------------------------------------------------------- #
