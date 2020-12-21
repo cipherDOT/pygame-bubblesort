@@ -39,7 +39,7 @@ def draw(n=None):
 
     drawgrid()
 
-# ---------------------------------------swapping function to swap to elements in a array---------------------------------- #
+# ---------------------------------------swapping function to swap two elements in a array--------------------------------- #
 
 
 def swap(array, i, j):
